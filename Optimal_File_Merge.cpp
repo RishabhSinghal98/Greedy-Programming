@@ -3,12 +3,12 @@ using namespace std;
 
 int mincost(vector<int> &files,int size)
 {
-	priority_queue<int,vector<int>,greater<int>> pq;
+	priority_queue<int,vector<int>,greater<int>> pq; // created min heap
 	int total_min_cost=0;
 	
 	for(int i=0;i<size;i++)
 	{
-		pq.push(files[i]);
+		pq.push(files[i]);   // pushing elements from files into min heap pq
 	}
 	int temp_cost=0;
 	int count=0;
